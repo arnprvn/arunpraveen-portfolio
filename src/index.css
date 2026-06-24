@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  /* Scrollbar hiders */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* Blinking cursor for typewriter */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  .animate-blink {
+    animation: blink 0.8s infinite;
+  }
+}
+
+/* Print Overrides for Resume PDF saving */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+  }
+  
+  /* Hide interactive page structures */
+  header, footer, nav, button, #main-nav, #ats-resume-overlay > div:first-of-type, #scroll-to-top-btn {
+    display: none !important;
+  }
+  
+  /* Reset container widths for printing */
+  #ats-resume-overlay {
+    position: static !important;
+    background: white !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    z-index: auto !important;
+    display: block !important;
+  }
+
+  #ats-print-canvas {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    display: block !important;
+  }
+}
+
