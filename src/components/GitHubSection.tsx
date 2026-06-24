@@ -34,11 +34,11 @@ export const GitHubSection: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [isRateLimited, setIsRateLimited] = useState<boolean>(false);
 
-  // Fallback offline state for Arun Praveen SJ in case of API rate-limiting or network issues
+  // Fallback offline state for arnprvn in case of API rate-limiting or network issues
   const offlineUserData: GitHubUser = {
-    login: "ArunPraveenSJ",
-    avatar_url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200", // professional male avatar mockup
-    html_url: "https://github.com/ArunPraveenSJ",
+    login: "arnprvn",
+    avatar_url: "https://github.com/arnprvn.png",
+    html_url: "https://github.com/arnprvn",
     name: "Arun Praveen SJ",
     bio: "Computer Science Engineering Student | Full Stack Developer | AI/ML Enthusiast",
     public_repos: 12,
@@ -51,7 +51,7 @@ export const GitHubSection: React.FC = () => {
       id: 1,
       name: "smart-agriculture-support",
       description: "AI-powered web dashboard that assists farmers with crop recommendations and soil diagnostics.",
-      html_url: "https://github.com/ArunPraveenSJ",
+      html_url: "https://github.com/arnprvn",
       stargazers_count: 5,
       forks_count: 2,
       language: "React.js",
@@ -61,7 +61,7 @@ export const GitHubSection: React.FC = () => {
       id: 2,
       name: "interview-ai-coach",
       description: "Dynamic mock interviews simulator powered by Gemini API with feedback score tracking.",
-      html_url: "https://github.com/ArunPraveenSJ",
+      html_url: "https://github.com/arnprvn",
       stargazers_count: 8,
       forks_count: 1,
       language: "JavaScript",
@@ -71,7 +71,7 @@ export const GitHubSection: React.FC = () => {
       id: 3,
       name: "stay-savour",
       description: "Mobile marketplace platform for homestays and homemade food tailored for students.",
-      html_url: "https://github.com/ArunPraveenSJ",
+      html_url: "https://github.com/arnprvn",
       stargazers_count: 4,
       forks_count: 0,
       language: "Oracle HCM",
@@ -81,7 +81,7 @@ export const GitHubSection: React.FC = () => {
       id: 4,
       name: "teacher-locator-iot",
       description: "ESP32 micro-terminal tracking and faculty location coordinator using RFID cards.",
-      html_url: "https://github.com/ArunPraveenSJ",
+      html_url: "https://github.com/arnprvn",
       stargazers_count: 3,
       forks_count: 2,
       language: "C++",
@@ -91,7 +91,7 @@ export const GitHubSection: React.FC = () => {
       id: 5,
       name: "plant-disease-detector",
       description: "CNN TensorFlow model identifying crop leaf defects with treatment suggestions.",
-      html_url: "https://github.com/ArunPraveenSJ",
+      html_url: "https://github.com/arnprvn",
       stargazers_count: 6,
       forks_count: 1,
       language: "Python",
@@ -101,7 +101,7 @@ export const GitHubSection: React.FC = () => {
       id: 6,
       name: "railjet-reservation",
       description: "MERN Stack seat allocation algorithm and automated ticketing reservation panel.",
-      html_url: "https://github.com/ArunPraveenSJ",
+      html_url: "https://github.com/arnprvn",
       stargazers_count: 7,
       forks_count: 3,
       language: "TypeScript",
@@ -281,6 +281,12 @@ export const GitHubSection: React.FC = () => {
               <div className="lg:col-span-5 flex flex-col justify-between p-6 rounded-3xl bg-zinc-50/50 dark:bg-zinc-900/30 border border-zinc-200/50 dark:border-zinc-800/50 shadow-xs">
                 <div className="space-y-5">
                   <div className="flex items-center space-x-4">
+                    <img
+                      src={user?.avatar_url}
+                      alt={user?.name || user?.login}
+                      referrerPolicy="no-referrer"
+                      className="w-16 h-16 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-sm"
+                    />
                     <div>
                       <h4 className="font-extrabold font-sans text-lg text-zinc-900 dark:text-white leading-tight">
                         {user?.name || user?.login}

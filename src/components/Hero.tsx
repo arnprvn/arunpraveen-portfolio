@@ -209,7 +209,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenATSView }) => {
                   </div>
                 </div>
 
-                {/* Profile Image Row Removed */}
+                {/* Profile Image Row */}
+                <div className="flex justify-center mb-5">
+                  <div className="relative w-24 h-24 rounded-full p-1 border-2 border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-sm">
+                    <img 
+                      src="https://github.com/arnprvn.png" 
+                      alt="Arun Praveen SJ" 
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                    <div className="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-white dark:border-zinc-800 rounded-full"></div>
+                  </div>
+                </div>
 
                 {/* Main Code Snippet / Stats Block */}
                 <div className="space-y-4 font-mono text-xs text-zinc-600 dark:text-zinc-300">

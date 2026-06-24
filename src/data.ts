@@ -14,10 +14,10 @@ export const PERSONAL_DETAILS = {
   email: "arunpraveen90@gmail.com",
   phone: "+91 91593 34006",
   phoneRaw: "9159334006",
-  linkedin: "https://linkedin.com/in/arun-praveen-sj",
+  linkedin: "https://www.linkedin.com/in/arun-praveen-sj/",
   linkedinLabel: "linkedin.com/in/arun-praveen-sj",
-  github: "https://github.com/ArunPraveenSJ",
-  githubUsername: "ArunPraveenSJ",
+  github: "https://github.com/arnprvn",
+  githubUsername: "arnprvn",
   bio: "Results-driven Computer Science and Engineering student with hands-on experience in Full Stack Development, Artificial Intelligence, Data Analytics, and Oracle Fusion HCM. Skilled in Java, Python, JavaScript, MERN Stack, Flutter, Firebase, MongoDB, and Data Analytics. Strong problem-solving abilities with experience gained through internships and real-world projects."
 };
 
@@ -197,7 +197,7 @@ export const PROJECTS: Project[] = [
       "Real-time localized Weather Monitoring API integration",
       "Comprehensive Farmer Dashboard with simple multi-language support"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/smart-agriculture-support"
+    githubUrl: "https://github.com/arnprvn/smart-agriculture-support"
   },
   {
     id: "proj-2",
@@ -211,7 +211,7 @@ export const PROJECTS: Project[] = [
       "ATS Resume Analysis with detailed parsing and formatting recommendations",
       "Historical Performance Tracking graph highlighting score progressions"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/interview-ai-coach"
+    githubUrl: "https://github.com/arnprvn/interview-ai-coach"
   },
   {
     id: "proj-3",
@@ -225,7 +225,7 @@ export const PROJECTS: Project[] = [
       "Student-friendly Accommodation Search filters based on proximity and price",
       "In-app chatting and peer-to-peer secure transaction systems"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/stay-savour"
+    githubUrl: "https://github.com/arnprvn/stay-savour"
   },
   {
     id: "proj-4",
@@ -239,7 +239,7 @@ export const PROJECTS: Project[] = [
       "Automated attendance logs exportable into CSV/Excel files",
       "Instant faculty notification panel for urgent class adjustments"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/teacher-locator-iot"
+    githubUrl: "https://github.com/arnprvn/teacher-locator-iot"
   },
   {
     id: "proj-5",
@@ -253,7 +253,7 @@ export const PROJECTS: Project[] = [
       "Actionable treatment guides and botanical descriptions of detected anomalies",
       "Offline prediction capabilities on mobile-responsive interfaces"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/plant-disease-detector"
+    githubUrl: "https://github.com/arnprvn/plant-disease-detector"
   },
   {
     id: "proj-6",
@@ -267,7 +267,7 @@ export const PROJECTS: Project[] = [
       "Automated alerts triggering immediately upon database face matches",
       "Database manager for storing multiple reference photographs of missing people"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/missing-person-detector"
+    githubUrl: "https://github.com/arnprvn/missing-person-detector"
   },
   {
     id: "proj-7",
@@ -281,7 +281,7 @@ export const PROJECTS: Project[] = [
       "Specialist classification matching patient concerns with local clinical departments",
       "Precautionary first-aid advice modules based on verified medical resources"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/healthcare-chatbot"
+    githubUrl: "https://github.com/arnprvn/healthcare-chatbot"
   },
   {
     id: "proj-8",
@@ -295,7 +295,7 @@ export const PROJECTS: Project[] = [
       "Predictive trendline modeling for quarterly sales pipelines",
       "Cross-filtering matrices showcasing regional and product performance"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/business-analytics-dashboard"
+    githubUrl: "https://github.com/arnprvn/business-analytics-dashboard"
   },
   {
     id: "proj-9",
@@ -309,7 +309,7 @@ export const PROJECTS: Project[] = [
       "Real-time train tracking dashboard and itinerary planners",
       "Fully responsive administrative portals and user transaction history logs"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/railjet-railway-reservation"
+    githubUrl: "https://github.com/arnprvn/railjet-railway-reservation"
   },
   {
     id: "proj-10",
@@ -323,7 +323,7 @@ export const PROJECTS: Project[] = [
       "Markdown document co-editor with automatic saving cycles",
       "Direct citation builder and resource library organizers"
     ],
-    githubUrl: "https://github.com/ArunPraveenSJ/researchflow"
+    githubUrl: "https://github.com/arnprvn/researchflow"
   }
 ];
 
