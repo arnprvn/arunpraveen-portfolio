@@ -1,20 +1,91 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+
+# Arun Praveen SJ Portfolio
+
+Computer Science Engineering Student | Full Stack Developer | Data Analyst | AI/ML Enthusiast | Oracle Fusion HCM Learner
+
+[Live Demo](YOUR_PORTFOLIO_LINK) • [LinkedIn](https://linkedin.com/in/arun-praveen-sj) • [GitHub](https://github.com/arnprvn)
+
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## About
 
-View your app in AI Studio: https://ai.studio/apps/cf6bcf4e-942a-480a-ba29-ae4f192ff289
+Welcome to my personal portfolio website. This portfolio showcases my projects, internships, certifications, technical skills, and achievements in:
+
+- Full Stack Development
+- Artificial Intelligence & Machine Learning
+- Data Analytics
+- Oracle Fusion HCM
+- Cloud Technologies
+
+---
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- JavaScript
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+- MySQL
+- Firebase
+
+### Tools
+- Git
+- GitHub
+- VS Code
+- Figma
+
+---
+
+## Featured Projects
+
+### Smart Agriculture Decision Support System
+AI-powered agriculture platform providing crop recommendations and weather-based insights.
+
+### Interview Coach AI
+AI-based interview preparation platform with resume analysis and mock interviews.
+
+### Living Spoon
+Homemade food and homestay platform connecting students and homeowners.
+
+### Teacher Location Finder using IoT
+RFID and ESP32-based real-time teacher tracking and attendance management system.
+
+---
+
+## Certifications
+
+- Oracle Cloud Infrastructure AI Foundations Associate
+- Oracle Fusion AI Studio Foundations Associate
+- IBM SkillsBuild
+- Google Cloud Generative AI
+- Deloitte Data Analytics Job Simulation
+
+---
+
+## Contact
+
+📧 Email: arunpraveen90@gmail.com
+
+🔗 LinkedIn: https://linkedin.com/in/arun-praveen-sj
+
+💻 GitHub: https://github.com/arnprvn
+
+---
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+This will look much more professional to recruiters than the default AI Studio README.
