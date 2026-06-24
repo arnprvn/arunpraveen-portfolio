@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { PROJECTS } from "../data";
 import { Project } from "../types";
-import { Search, Github, ExternalLink, SlidersHorizontal, Layers, ChevronRight, CheckCircle2 } from "lucide-react";
+import { Search, ExternalLink, SlidersHorizontal, Layers, ChevronRight, CheckCircle2 } from "lucide-react";
 import { motion, useInView, AnimatePresence } from "motion/react";
 
 export const Projects: React.FC = () => {
@@ -129,14 +129,22 @@ export const Projects: React.FC = () => {
                   <motion.div
                     key={project.id}
                     layout
-                    initial={{ opacity: 0, scale: 0.96 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                    className={`group relative overflow-hidden rounded-3xl bg-white dark:bg-zinc-900 border transition-all ${
+                    initial={{ opacity: 0, scale: 0.96, y: 10 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.95, y: 10 }}
+                    whileHover={!isExpanded ? { y: -4, scale: 1.01 } : {}}
+                    whileTap={!isExpanded ? { scale: 0.98 } : {}}
+                    transition={{ 
+                      duration: 0.4, 
+                      delay: index * 0.05,
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 24
+                    }}
+                    className={`group relative overflow-hidden rounded-3xl bg-white dark:bg-zinc-900 border ${
                       isExpanded
-                        ? "border-zinc-400 dark:border-zinc-700 md:col-span-2 lg:col-span-2 shadow-xl"
-                        : "border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg hover:shadow-zinc-900/5 hover:-translate-y-1"
+                        ? "border-zinc-400 dark:border-zinc-700 md:col-span-2 lg:col-span-2 shadow-xl transition-colors"
+                        : "border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-lg hover:shadow-zinc-900/5 transition-colors"
                     }`}
                   >
                     <div className="p-6 flex flex-col justify-between h-full">
@@ -147,18 +155,6 @@ export const Projects: React.FC = () => {
                             {categories.find((c) => c.id === project.category)?.label || project.category}
                           </span>
                           <div className="flex items-center space-x-2">
-                            {project.githubUrl && (
-                              <a
-                                id={`proj-github-${project.id}`}
-                                href={project.githubUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-1.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 text-zinc-500 hover:text-zinc-900 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-400 dark:hover:text-white transition-colors"
-                                title="Repository Code"
-                              >
-                                <Github className="w-4 h-4" />
-                              </a>
-                            )}
                           </div>
                         </div>
 
